@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.floracore'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compileOnly 'com.github.floracore.floracore:api:2.0.4.10'
+}
+
+test {
+    useJUnitPlatform()
+}
